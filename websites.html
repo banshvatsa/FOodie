@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PIZZA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+<script>
+    $(document).ready(function () {
+    var states = ['Farm House', 'Peppy Paneer', 'Chicken Pizza', 'Cheese Corn'];
+    var cities = ['veggies pizza', 'barbeque chicken', 'veg tacco'];
+    $('#searchstate').typeahead({ source: states });
+    $('#city').typeahead({ source: cities });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3" style="background-color:aliceblue;"><a href="#"><span
+                        class="glyphicon glyphicon-home"></span></a> Home </div>
+            <div class="col-lg-2" style="background-color:aliceblue;"><a href="#"><span
+                        class="glyphicon glyphicon-heart"></span></a> Favourites </div>
+            <div class="col-lg-2" style="background-color:aliceblue;"><a href="#"><span
+                        class="glyphicon glyphicon-bell"></span></a> Notification </div>
+            <div class="col-lg-2" style="background-color:aliceblue;"><a href="#"><span
+                        class="glyphicon glyphicon-user"></span></a> Follow us</div>
+            <div class="col-lg-3" style="background-color:aliceblue;"><a href="#"><span
+                        class="glyphicon glyphicon-log-in"></span></a> Log In </div>
+        </div>
+
+    </div>
+    <h1 class="head" style="color:rgb(226, 125, 43); text-align:center;padding-top:5px;"><u><i>POCO PIZZA</i></u>
+    </h1>
+    <div class="Home">
+        <div class="col-md-3">
+            <button class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Search </button>
+            <body>
+                <div class="container">
+                <div class="tabbable">
+                <ul class="nav nav-tabs">
+                </ul>
+                <div class="tab-content">
+                <div class="tab-pane active" id="tab1">
+                <form role="form">
+                <div class="form-group">
+                <input type="text" class="form-control" id="searchstate" placeholder="Types of Pizza"
+                data-provide="typeahead">
+                </div>
+                </form>
+                </div>
+                <div class="tab-pane" id="tab2">
+                <form role="form">
+                <div class="form-group">
+                <input type="text" class="form-control" id="city" placeholder="Type City"
+                data-provide="typeahead">
+                </div>
+                </form>
+                </div>
+                </div>
+                </div>
+                </div>
+            <button class="btn btn-primary"> Contact us </button>
+        </div>
+        <div class="col-md-9" style="text-align: right;">
+            <button type="button" class="btn btn-primary">Home</button>
+            <button type="button" class="btn btn-primary">Menu</button>
+            <button type="button" class="btn btn-primary">Shop</button>
+            <br>
+        </div>
+    </div>
+    <br>
+    <br>
+    <img src="image2.jpeg" class="img-rounded" height="600" width="1500">
+    <br>
+    <div class="ps" style="color:black; text-align:left;padding-top:5px ">
+        <h2> ENJOY UNLIMITED MEDIUM PIZZA IN TOWN</h2>
+    </div>
+    <table class="table">
+        <tr>
+            <td><img src="farm-house pizza.jpeg" class="img-rounded" height="300" width="350"></td>
+            <td><img src="peppy-paneer-pizza.jpeg" class="img-rounded" height="300" width="350"></td>
+            <td><img src="barbeque-chicken-pizza.jpeg" class="img-rounded" height="300" width="350"></td>
+            <td><img src="cheese-corn-pizza.jpeg" class="img-rounded" height="300" width="350"></td>
+        </tr>
+        <tr>
+            <td>Farm House Pizza</td>
+            <td>Peppy Paneer Pizza</td>
+            <td>Chicken Pizza</td>
+            <td>Cheese Corn Pizza</td>
+        </tr>
+    </table>
+    <br>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Types of Pizza<span
+                class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">veggies pizza</a></li>
+            <li><a href="#">veg tacco</a></li>
+            <li class="divider"></li>
+            <li><a href="#">non-veg pizza</a></li>
+            <li><a href="#">barbeque chicken pizza</a></li>
+            <li><a href="#">non-veg tacco</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+    <table class=" table table-bordered">
+        <tr>
+            <th>S.No</th>
+            <th>Items</th>
+            <th>Price</th>
+            <th>Discount</th>
+        </tr>
+        <tr class="info">
+            <td>1</td>
+            <td>Neapolitan Pizza<span class="label label-danger">original pizza</td>
+            <td>350</td>
+            <td>5%</td>
+        </tr>
+        <tr class="success">
+            <td>2</td>
+            <td>Chicago Pizza <span class="label label-primary">original pizza</td>
+            <td>320</td>
+            <td>10%</td>
+        </tr>
+        <tr class="active">
+            <td>3</td>
+            <td> New York-Style Pizza<span class="label label-info">York-style</td>
+
+            <td>350</td>
+            <td>12%</td>
+        </tr>
+        <tr class="warning">
+            <td>4</td>
+            <td>Sicilian Pizza<span class="label label-warning">Robust Sauce</td>
+            <td>310</td>
+            <td>5%</td>
+        </tr>
+        <tr class="info">
+            <td>5</td>
+            <td>Greek Pizza <span class="label label-success">Sicilian crust</span></td>
+            <td>380</td>
+            <td>15%</td>
+        </tr>
+        <tr class="success">
+            <td>6</td>
+            <td>California Pizza<span class="label label-success">Sicilian crust</span></td>
+            <td>400</td>
+            <td>20%</td>
+        </tr>
+        <br>
+    </table>
+    <div class="container">
+        <a href="#"> Message <span class="badge">1</span></a>
+        <br>
+
+        <button class="btn btn-info">Table booking <span class="badge">4</span></button>
+
+        <button class="btn btn-warning">Recipes <span class="badge">5</span></button>
+
+        <button class="btn btn-primary"> Offers <span class="badge">8</span></button>
+        <br>
+        <br>
+        <br>
+
+        <div class="container">
+            <button class="btn btn-info" data-toggle="modal" data-target="#mymodal">Click to Provide Tip</button>
+            <div class="modal" id="mymodal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="btn btn-danger close" data-dismiss="modal">&times;</button>
+                            <h2 class="modal-title">We Welcome You Here!</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Housekeeping </p>
+                            <br>
+                            <p> Concierges</p>
+                            <br>
+                            <p> Luggage Attendants </p>
+                            <br>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn-btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hh" style="text-align: center;">
+        <ul class="pagination pagination-lg ">
+            <li><a href="#">1</a> </li>
+            <li><a href="websites2.html">2</a> </li>
+            <li><a href="websites3.html">3</a> </li>
+            <li><a href="#">4</a> </li>
+            <li><a href="#">5</a> </li>
+        </ul>
+        <ul class="breadcrumb">
+            <li class="active"><a href="#">Rating</a> </li>
+            <li class="active"><a href="#">Quality</a> </li>
+            <li><a href="#">service</a> </li>
+            <li><a href="#">goods</a> </li>
+
+        </ul>
+    </div>
+    <br>
+
+
+</body>
+
+</html>
